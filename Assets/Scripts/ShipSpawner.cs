@@ -5,7 +5,7 @@ using TMPro;
 
 public class ShipSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject enemy;
+    [SerializeField] GameObject ship, fastShip;
     public List<GameObject> spawnedShips = new();
     public int nextWave = 1;
     public int howManyEnemies;
@@ -112,7 +112,7 @@ public class ShipSpawner : MonoBehaviour
             float upperPartX = Random.Range(-500f, 500f);
             float upperPartZ = Random.Range(200f, 500f);
             Vector3 spawnPosition1 = new Vector3(upperPartX, 5.361748f, upperPartZ);
-            GameObject spawnedShip1 = Instantiate(enemy, spawnPosition1, Quaternion.identity);
+            GameObject spawnedShip1 = Instantiate(Random.value < 0.66f ? ship : fastShip, spawnPosition1, Quaternion.identity);
             spawnedShips.Add(spawnedShip1);
             break;
 
@@ -120,7 +120,7 @@ public class ShipSpawner : MonoBehaviour
             float bottomPartX = Random.Range(-500f, 500f);
             float bottomPartZ = Random.Range(-200f, -500f);
             Vector3 spawnPosition2 = new Vector3(bottomPartX, 5.361748f, bottomPartZ);
-            GameObject spawnedShip2 = Instantiate(enemy, spawnPosition2, Quaternion.identity);
+            GameObject spawnedShip2 = Instantiate(Random.value < 0.66f ? ship : fastShip, spawnPosition2, Quaternion.identity);
             spawnedShips.Add(spawnedShip2);
             break;
 
@@ -128,7 +128,7 @@ public class ShipSpawner : MonoBehaviour
             float rightPartX = Random.Range(200f, 500f);
             float rightPartZ = Random.Range(200f, -200f);
             Vector3 spawnPosition3 = new Vector3(rightPartX, 5.361748f, rightPartZ);
-            GameObject spawnedShip3 = Instantiate(enemy, spawnPosition3, Quaternion.identity);
+            GameObject spawnedShip3 = Instantiate(Random.value < 0.66f ? ship : fastShip, spawnPosition3, Quaternion.identity);
             spawnedShips.Add(spawnedShip3);
             break;
 
@@ -136,7 +136,7 @@ public class ShipSpawner : MonoBehaviour
             float leftPartX = Random.Range(-200, -500f);
             float leftPartZ = Random.Range(200f, -200f);
             Vector3 spawnPosition4 = new Vector3(leftPartX, 5.361748f, leftPartZ);
-            GameObject spawnedShip4 = Instantiate(enemy, spawnPosition4, Quaternion.identity);
+            GameObject spawnedShip4 = Instantiate(Random.value < 0.66f ? ship : fastShip, spawnPosition4, Quaternion.identity);
             spawnedShips.Add(spawnedShip4);
             break;
         }
