@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7484505872624998307}
   - component: {fileID: 7484505872624998319}
   m_Layer: 0
-  m_Name: Ship
+  m_Name: Fast Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b9a4668716273a42ab2ea9d23d0beea, type: 2}
+  - {fileID: 2100000, guid: eefd6239f4c46304a864998bfc76bb10, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,5 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aedae3ab3a1d31e46bb2e35566d84f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 16
   land: {fileID: 0}

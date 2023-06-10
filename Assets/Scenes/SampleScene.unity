@@ -367,7 +367,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ae026dff7c44a4dac71b65edf43820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 7484505872624998306, guid: 18cddeee8a0923144a03a1353424bc71, type: 3}
+  ship: {fileID: 7484505872624998306, guid: 18cddeee8a0923144a03a1353424bc71, type: 3}
+  fastShip: {fileID: 7484505872624998306, guid: 64547c38180fe0747b67016bd508ea03,
+    type: 3}
   spawnedShips: []
   nextWave: 1
   howManyEnemies: 0
