@@ -11,6 +11,7 @@ public class ShipSpawner : MonoBehaviour
     public int howManyEnemies;
     public float timeBetweenSpawn;
     public bool canSwitchTheCase;
+    public Animator waveAnimator;
 
 
 
