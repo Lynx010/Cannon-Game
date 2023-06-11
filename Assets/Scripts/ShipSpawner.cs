@@ -12,6 +12,7 @@ public class ShipSpawner : MonoBehaviour
     public float timeBetweenSpawn;
     public bool canSwitchTheCase;
     public Animator waveAnimator;
+    public TMP_Text waveText;
 
 
 
@@ -40,6 +41,8 @@ public class ShipSpawner : MonoBehaviour
         {
             case 1:
                 Debug.Log("Wave 1 yazisi geldi");
+                waveText.text = "Wave 1";
+                waveAnimator.SetTrigger("TriggerAnim");
                 yield return new WaitForSeconds(3);
                 Debug.Log("Wave 1 yazisi 3sn sonra gitti");
 
@@ -59,6 +62,8 @@ public class ShipSpawner : MonoBehaviour
             
             case 2:
                 Debug.Log("Wave 2 yazisi geldi");
+                waveText.text = "Wave 2";
+                waveAnimator.SetTrigger("TriggerAnim");
                 yield return new WaitForSeconds(3);
                 Debug.Log("Wave 2 yazisi 3sn sonra gitti");
 
@@ -78,6 +83,8 @@ public class ShipSpawner : MonoBehaviour
 
             case 3:
                 Debug.Log("Wave 3 yazisi geldi");
+                waveText.text = "Wave 3";
+                waveAnimator.SetTrigger("TriggerAnim");
                 yield return new WaitForSeconds(3);
                 Debug.Log("Wave 3 yazisi 3sn sonra gitti");
 
@@ -97,6 +104,8 @@ public class ShipSpawner : MonoBehaviour
 
             case 4:
                 Debug.Log("Wave 4 yazisi geldi");
+                waveText.text = "Wave 4";
+                waveAnimator.SetTrigger("TriggerAnim");
                 yield return new WaitForSeconds(3);
                 Debug.Log("Wave 4 yazisi 3sn sonra gitti");
 
@@ -116,6 +125,8 @@ public class ShipSpawner : MonoBehaviour
 
             case 5:
                 Debug.Log("Wave 5 yazisi geldi");
+                waveText.text = "Wave 5";
+                waveAnimator.SetTrigger("TriggerAnim");
                 yield return new WaitForSeconds(3);
                 Debug.Log("Wave 5 yazisi 3sn sonra gitti");
 
@@ -135,6 +146,8 @@ public class ShipSpawner : MonoBehaviour
             
             case 6:
                 Debug.Log("Wave 6 yazisi geldi");
+                waveText.text = "Wave 6";
+                waveAnimator.SetTrigger("TriggerAnim");
                 yield return new WaitForSeconds(3);
                 Debug.Log("Wave 6 yazisi 3sn sonra gitti");
 

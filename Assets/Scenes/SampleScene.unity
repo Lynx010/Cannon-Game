@@ -477,6 +477,7 @@ MonoBehaviour:
   timeBetweenSpawn: 0
   canSwitchTheCase: 0
   waveAnimator: {fileID: 1092180543}
+  waveText: {fileID: 1131167197}
 --- !u!4 &390704727
 Transform:
   m_ObjectHideFlags: 0
