@@ -80,7 +80,7 @@ public class ShipSpawner : MonoBehaviour
                 yield return new WaitForSeconds(3);
                 Debug.Log("Wave 3 yazisi 3sn sonra gitti");
 
-                howManyEnemies = 5;
+                howManyEnemies = 3;
                 timeBetweenSpawn = 3;
                 for(int i = 0; i < howManyEnemies; i++)
                 {
