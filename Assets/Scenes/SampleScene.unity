@@ -962,6 +962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensX: 400
   sensY: 400
+  maxRotationY: -70
+  MinRotationY: 20
   orientation: {fileID: 1781995127}
 --- !u!1 &1781995126
 GameObject:
