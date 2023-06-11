@@ -95,9 +95,61 @@ public class ShipSpawner : MonoBehaviour
                 break;
 
             case 4:
-                //Boss
+                Debug.Log("Wave 4 yazisi geldi");
+                yield return new WaitForSeconds(3);
+                Debug.Log("Wave 4 yazisi 3sn sonra gitti");
+
+                howManyEnemies = 4;
+                timeBetweenSpawn = 3;
+                for(int i = 0; i < howManyEnemies; i++)
+                {
+                    Debug.Log("Spawned " + i);
+                    SpawnShip();
+                    yield return new WaitForSeconds(timeBetweenSpawn);
+                }
+        
+                Debug.Log(spawnedShips.Count);
+                nextWave ++;
+                yield return new WaitUntil(() => canSwitchTheCase == true);
                 break;
-                
+
+            case 5:
+                Debug.Log("Wave 5 yazisi geldi");
+                yield return new WaitForSeconds(3);
+                Debug.Log("Wave 5 yazisi 3sn sonra gitti");
+
+                howManyEnemies = 5;
+                timeBetweenSpawn = 3;
+                for(int i = 0; i < howManyEnemies; i++)
+                {
+                    Debug.Log("Spawned " + i);
+                    SpawnShip();
+                    yield return new WaitForSeconds(timeBetweenSpawn);
+                }
+        
+                Debug.Log(spawnedShips.Count);
+                nextWave ++;
+                yield return new WaitUntil(() => canSwitchTheCase == true);
+                break;
+            
+            case 6:
+                Debug.Log("Wave 6 yazisi geldi");
+                yield return new WaitForSeconds(3);
+                Debug.Log("Wave 6 yazisi 3sn sonra gitti");
+
+                howManyEnemies = 6;
+                timeBetweenSpawn = 3;
+                for(int i = 0; i < howManyEnemies; i++)
+                {
+                    Debug.Log("Spawned " + i);
+                    SpawnShip();
+                    yield return new WaitForSeconds(timeBetweenSpawn);
+                }
+        
+                Debug.Log(spawnedShips.Count);
+                nextWave ++;
+                yield return new WaitUntil(() => canSwitchTheCase == true);
+                break;
         }
         StartCoroutine(WaveSpawner());
     }
