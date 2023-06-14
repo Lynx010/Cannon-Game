@@ -31,7 +31,5 @@ public class PlayerCamera : MonoBehaviour
 
 
         transform.position = CannonPos.position;
-
-        transform.rotation = CannonPos.rotation;///////////
     }
 }
