@@ -757,6 +757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 577010046}
   - component: {fileID: 577010047}
+  - component: {fileID: 577010048}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -799,6 +800,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 1007659661}
   speed: 1
+--- !u!114 &577010048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577010045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2180b0aefdc734fa715d8330957266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camHolder: {fileID: 1652113405}
 --- !u!1 &604165248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007659660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53, y: 23, z: 150}
+  m_LocalPosition: {x: -53, y: 1, z: 150}
   m_LocalScale: {x: 16.42156, y: 16.42156, z: 16.42156}
   m_ConstrainProportionsScale: 0
   m_Children: []

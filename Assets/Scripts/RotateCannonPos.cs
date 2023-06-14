@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCamera : MonoBehaviour
+public class RotateCannonPos : MonoBehaviour
 {
     public float sensX, sensY, maxRotationY, MinRotationY;
-    public Transform orientation, CannonPos;
+    public Transform orientation;
 
     float xRotation, yRotation;
     
@@ -17,7 +17,6 @@ public class PlayerCamera : MonoBehaviour
     
     void Update()
     {
-        //get mouse input
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
 
@@ -28,10 +27,5 @@ public class PlayerCamera : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
-
-
-        transform.position = CannonPos.position;
-
-        transform.rotation = CannonPos.rotation;///////////
     }
 }
