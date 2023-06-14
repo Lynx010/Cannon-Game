@@ -792,7 +792,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577010045}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd5e1ab029db4dc45bbe23a0658a531e, type: 3}
   m_Name: 
@@ -1399,6 +1399,8 @@ MonoBehaviour:
   sensY: 400
   maxRotationY: -70
   MinRotationY: 20
+  maxRotationX: 80
+  MinRotationX: 280
   orientation: {fileID: 1781995127}
   CannonPos: {fileID: 1100972410}
 --- !u!1 &1764722988
