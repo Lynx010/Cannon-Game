@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     public float sensX, sensY, maxRotationY, MinRotationY;
-    public Transform orientation;
+    public Transform orientation, CannonPos;
 
     float xRotation, yRotation;
     
@@ -28,5 +28,7 @@ public class PlayerCamera : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+
+        transform.position = CannonPos.position;
     }
 }
