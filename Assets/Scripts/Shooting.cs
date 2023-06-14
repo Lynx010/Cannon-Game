@@ -9,7 +9,6 @@ public class Shooting : MonoBehaviour
     public float force;
     float shootingTimer;
     public float shootingDelay;
-    public ShipSpawner shipSpawner;
     void Start()
     {
         
