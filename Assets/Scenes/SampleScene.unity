@@ -1396,6 +1396,8 @@ MonoBehaviour:
   sensY: 400
   maxRotationY: -90
   MinRotationY: 20
+  maxRotationX: 80
+  MinRotationX: 280
   orientation: {fileID: 1781995127}
 --- !u!1 &1764722988
 GameObject:

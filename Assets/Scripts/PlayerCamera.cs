@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public float sensX, sensY, maxRotationY, MinRotationY;
-    public Transform orientation;
+    public float sensX, sensY, maxRotationY, MinRotationY, maxRotationX, MinRotationX;
+    public Transform orientation, CannonPos;
 
     float xRotation, yRotation;
     
@@ -25,6 +25,7 @@ public class PlayerCamera : MonoBehaviour
         xRotation -= mouseY;
 
         xRotation = Mathf.Clamp(xRotation, maxRotationY, MinRotationY); //clamp the value so you can't rotate forever
+        yRotation = Mathf.Clamp(yRotation, maxRotationX, MinRotationX);
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
